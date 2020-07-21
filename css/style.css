@@ -1,8 +1,10 @@
+/* Specification */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
+    font-family: 'HelveticaNeueCyr', sans-serif;
     font: inherit;
     vertical-align: baseline;
     -webkit-box-sizing: border-box;
@@ -11,11 +13,39 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 body {
     font-size: 16px;
-    font-family: helveticaneuecyr;
+    font-family: 'HelveticaNeueCyr', sans-serif;
     color: #000;
     line-height: 1.5;
     background: #fff;
     overflow-x: hidden;
+}
+section ul {
+    list-style: none;
+}
+section ul > li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.2;
+}
+section ul > li:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background: #df2644;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+
+/* Style section */
+.price-section {
+    padding: 70px;
 }
 .standart_width {
     max-width: 1280px;
@@ -26,13 +56,12 @@ body {
 .price_section .h1_linear::before {
     display: none;
 }
-.h1_linear {
+.price-section .h1_linear {
     font-size: 48px;
     font-weight: 900;
-    padding-bottom: 20px;
-    position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 52px;
     text-align: center;
+	font-style: normal;
 }
 .price_block {
     border-top: 1px solid #999999;
@@ -46,7 +75,14 @@ body {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 55px 0;
+}
+.price_block_col {
+    width: 42%;
 }
 .price_block_title {
     font-size: 36px;
+}
+.price_block_title span {
+    color: #DD002C;
 }
