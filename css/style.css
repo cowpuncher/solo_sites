@@ -101,6 +101,9 @@ section ul {
 .price_block_col .red_bt {
     margin: 0;
 }
+.price-section ul {
+    list-style: none;
+}
 .price-section ul > li {
     margin-bottom: 40px;
     position: relative;
