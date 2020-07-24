@@ -1,0 +1,25 @@
+/*----------------------- Fonts connection -------------------------- */
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HelveticaNeueCyr-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/HelveticaNeueCyr-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HelveticaNeueCyr-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/HelveticaNeueCyr-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 700;
+	font-style: normal;
+}
