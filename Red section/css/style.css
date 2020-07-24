@@ -55,10 +55,10 @@ section ul {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 60px 0 20px;
+    padding: 60px 0 30px;
 }
 .price_block_col {
-    width: 42%;
+    width: 39%;
     font-size: 16px;
 }
 .price_block_title {
@@ -71,7 +71,7 @@ section ul {
 }
 .price_block_text {
     font-size: 18px;
-    margin-bottom: 29px;
+    margin-bottom: 20px;
 }
 .price_text_sale,
 .price_block_text span {
@@ -107,10 +107,10 @@ section ul {
     padding: 0;
 }
 .price-section ul > li {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
     position: relative;
     padding-left: 30px;
-    line-height: 1.2;
+    line-height: 1.5em;
 }
 .price-section ul > li:before {
     content: '';
@@ -124,6 +124,15 @@ section ul {
     position: absolute;
     top: 6px;
     left: 0px;
+}
+.price_block_pay ul > li {
+    margin-bottom: 20px;
+}
+.price_block_pay .price_block_text {
+    margin-bottom: 30px;
+}
+.price_block_list {
+    margin: 5px 0 60px;
 }
 
 @media screen and (max-width: 768px) {
