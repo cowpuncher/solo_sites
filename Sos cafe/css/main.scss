@@ -1,3 +1,33 @@
+@mixin dFlex($align, $justify) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: $align;
+    -webkit-align-items: $align;
+       -moz-box-align: $align;
+        -ms-flex-align: $align;
+            align-items: $align;
+    -webkit-box-pack:  $justify;
+    -webkit-justify-content:  $justify;
+       -moz-box-pack:  $justify;
+        -ms-flex-pack:  $justify;
+            justify-content: $justify;
+}
+@mixin cardImg {
+    background: $bgColorWhite;
+    @include dFlex(center, center);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+         -webkit-box-shadow: $cardShadow;
+            -moz-box-shadow: $cardShadow;
+                 box-shadow: $cardShadow;
+                 position: relative;
+                 overflow: hidden;
+}
+
 $bgColorWhite: #FFFFFF;
 $colorRed: #ee3c2d;
 $cardShadow: 2px 4px 10px 0px rgba(0,0,0,.3);
@@ -191,16 +221,7 @@ a {
     margin: 0 auto;
     position: relative;
     width: 1270px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    @include dFlex(flex-start, space-between);
 }
 .snacks__list__item {
     width: 24%;
@@ -210,31 +231,7 @@ a {
     
 }
 .menu__list__item__img {
-    background: $bgColorWhite;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-            
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-         border-radius: 10px;
-         -webkit-box-shadow: $cardShadow;
-            -moz-box-shadow: $cardShadow;
-                 box-shadow: $cardShadow;
-                 position: relative;
-                 overflow: hidden;
+    @include cardImg;
     img {
         width: 100%;
         height: auto;
@@ -249,21 +246,7 @@ a {
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    @include dFlex(center,  space-between);
     top: 30px;
     left: 30px;
 }
