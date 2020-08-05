@@ -1,30 +1,62 @@
 @import "variables";
 @import "mixin";
 
+//ANCHOR Specification
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    @include indentZeroing;
+    line-height: 1.425;
+    min-height: 100%;
+    position: relative;
 }
-h1 {
-    margin: 0;
-    padding: 0;
-    color: $colorRed;
+// ANCHOR TITLES
+h1, h2, h3, h4, h5, h6 {
+    @include indentZeroing;
+    text-transform: uppercase;
+    font-weight: 900;
+
 }
 h1.menu_header_title {
-    font-size: 104.3px;
+    font-size: 60px;
     line-height: 1;
+    color: $colorRed;
 }
+
+.menu-flexbox__item__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 35px;
+}
+// ANCHOR LINKS
 a {
     background-color: transparent;
     text-decoration: none;
 }
-.menu-flexbox__item__title {
-    font-size: 36px;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+// ANCHOR MAIN MENU
+.new_menu_header {
+    background-color: $bgColorWhite;
+    background-image: none;
+    position: relative;
+    color: #292828;
+    padding-right: 0;
+    padding-left: 0;
     text-align: center;
-    margin-bottom: 28px;
+    height: auto;
+    margin-bottom: 105px;
+    padding-top: 190px;
+}
+.menu_sub-menu {
+    height: 84px;
+    background-color: #FFFFFF;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    -webkit-transition: all linear .35s;
+    -o-transition: all linear .35s;
+    -moz-transition: all linear .35s;
+    transition: all linear .35s;
 }
 .menu_sub-menu {
     top: 0;
@@ -57,15 +89,114 @@ a {
     -moz-transition: all linear .2s;
     transition: all linear .2s;
     padding: 0 18px;
+    font-weight: 700;
 }
 .menu_sub-menu ul li a:hover, .menu_sub-menu ul li a.active {
     color: $colorRed;
 }
 .menu_sub-menu .red_logo {
     position: absolute;
-    right: 8%;
+    right: 12%;
     top: 14px;
 }
+// // ANCHOR MENU POPUP
+// .overlay {
+//     position: fixed;
+//     background: #FFFFFF;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 0%;
+//     opacity: 0;
+//     visibility: hidden;
+//     -webkit-transition: opacity .35s, visibility .35s, height .35s;
+//     -o-transition: opacity .35s, visibility .35s, height .35s;
+//     -moz-transition: opacity .35s, visibility .35s, height .35s;
+//     transition: opacity .35s, visibility .35s, height .35s;
+//     overflow: hidden;
+//     z-index: 99;
+// }
+// .overlay.open {
+//     opacity: 1;
+//     overflow: auto;
+//     visibility: visible;
+//     height: 100%;
+// }
+// .overlay nav {
+//     position: relative;
+//     height: 70%;
+//     top: 30px;
+//     font-size: 36px;
+//     text-transform: uppercase;
+//     font-weight: 400;
+//     text-align: center;
+//     font-family: 'Circe-Bold', sans-serif;
+//     width: 214px;
+//     margin: 0 auto;
+// }
+// .overlay ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0 auto;
+//     display: inline-block;
+//     position: relative;
+//     height: 100%;
+// }
+// .overlay ul li {
+//     display: block;
+//     min-height: 74px;
+//     line-height: 74px;
+//     position: relative;
+//     opacity: 1;
+// }
+// .overlay.open li {
+//     -webkit-animation: fadeInRight .5s ease forwards;
+//     -moz-animation: fadeInRight .5s ease forwards;
+//       -o-animation: fadeInRight .5s ease forwards;
+//          animation: fadeInRight .5s ease forwards;
+//     -webkit-animation-delay: .35s;
+//     -moz-animation-delay: .35s;
+//       -o-animation-delay: .35s;
+//          animation-delay: .35s;
+// }
+// .overlay ul li.nav_menu_logo {
+//     height: 140px;
+//     margin-bottom: 54px;
+// }
+// .overlay ul li a {
+//     display: block;
+//     position: relative;
+//     color: #292828;
+//     text-decoration: none;
+//     overflow: hidden;
+// }
+// .overlay-menu .phone_block {
+//     display: none;
+//     color: #000;
+//     font-size: 23px;
+//     padding-left: 36px;
+//     white-space: nowrap;
+//     margin-bottom: 10px;
+//     font-weight: 600;
+//     line-height: 1.5;
+//     background-position-x: 40px;
+//     margin-top: 50px;
+// }
+// .overlay-menu .whatsapp_block {
+//     display: none;
+//     color: #000;
+//     font-size: 23px;
+//     padding-left: 36px;
+//     white-space: nowrap;
+//     margin-bottom: 10px;
+//     font-weight: 600;
+//     line-height: 36px;
+//     background-image: url(/upload/whatsapp.svg);
+//     -webkit-background-size: contain;
+//        -moz-background-size: contain;
+//             background-size: contain;
+//     background-repeat: no-repeat;
+// }
 .container-fixed {
     max-width: 1680px;
     width: 100%;
@@ -79,6 +210,7 @@ a {
          transform: translateX(-50%);
     z-index: 100;
 }
+// ANCHOR BURGER MENU
 .button_container {
     position: absolute;
     top: -5px;
@@ -171,67 +303,56 @@ a {
          transform: translateY(-9px) translateX(0) rotate(-45deg);
     background: $bgColorWhite;
 }
-.new_menu_header {
-    background-color: $bgColorWhite;
-    background-image: none;
-    position: relative;
-    color: #292828;
-    padding-right: 0;
-    padding-left: 0;
-    text-align: center;
-    height: auto;
-    margin-bottom: 30px;
-    margin-top: 0;
-}
+// ANCHOR SECTIOn
 .section_menu {
-    background: wheat;
+    background: $colorYell;
+    padding: 50px 0;
 }
+// ANCHOR MENU LIST 
 .snacks__list {
     margin: 0 auto;
     position: relative;
     width: 1270px;
-    @include dFlex($align:flex-start);
+    @include dFlex(flex-start, center);
 }
 .snacks__list__item {
-    width: 24%;
-    text-align: center;
-    text-decoration: unset;
-    color: unset;
+    @include card(4, .1%)
     
 }
 .menu__list__item__img {
-    @include cardImg;
-    img {
-        width: 100%;
-        height: auto;
-    }
+    @include cardImg();
 }
 .menu__list__item__new {
     position: absolute;
     background: $colorRed;
     color: #fff;
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    @include dFlex;
-    top: 30px;
-    left: 30px;
+    @include dFlex(center, center);
+    top: 15px;
+    left: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 .menu__list__item__price {
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 1.1px;
     color: $colorRed;
+    span {
+        font-size: 15px;;
+    }
 }
 .menu__list__item__title {
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: 1.6px;
-    margin-bottom: 13px;
+    margin-bottom: 2px;
     text-transform: uppercase;
 }
 .menu__list__item__descr {
     line-height: 20px;
     font-size: 15px;
-    margin-bottom: 13px;
 }

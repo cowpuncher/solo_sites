@@ -1,18 +1,31 @@
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  line-height: 1.425;
+  min-height: 100%;
+  position: relative;
 }
 
-h1 {
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
   padding: 0;
-  color: #ee3c2d;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 h1.menu_header_title {
-  font-size: 104.3px;
+  font-size: 60px;
   line-height: 1;
+  color: #ee3c2d;
+}
+
+.menu-flexbox__item__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 a {
@@ -20,12 +33,26 @@ a {
   text-decoration: none;
 }
 
-.menu-flexbox__item__title {
-  font-size: 36px;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+.new_menu_header {
+  background-color: #FFFFFF;
+  background-image: none;
+  position: relative;
+  color: #292828;
+  padding-right: 0;
+  padding-left: 0;
   text-align: center;
-  margin-bottom: 28px;
+  height: auto;
+  margin-bottom: 105px;
+  padding-top: 190px;
+}
+
+.menu_sub-menu {
+  height: 84px;
+  background-color: #FFFFFF;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: all linear 0.35s;
 }
 
 .menu_sub-menu {
@@ -60,6 +87,7 @@ a {
   color: #292828;
   transition: all linear 0.2s;
   padding: 0 18px;
+  font-weight: 700;
 }
 
 .menu_sub-menu ul li a:hover, .menu_sub-menu ul li a.active {
@@ -68,7 +96,7 @@ a {
 
 .menu_sub-menu .red_logo {
   position: absolute;
-  right: 8%;
+  right: 12%;
   top: 14px;
 }
 
@@ -149,21 +177,9 @@ a {
   background: #FFFFFF;
 }
 
-.new_menu_header {
-  background-color: #FFFFFF;
-  background-image: none;
-  position: relative;
-  color: #292828;
-  padding-right: 0;
-  padding-left: 0;
-  text-align: center;
-  height: auto;
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
 .section_menu {
-  background: wheat;
+  background: #feffe8;
+  padding: 50px 0;
 }
 
 .snacks__list {
@@ -172,14 +188,16 @@ a {
   width: 1270px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .snacks__list__item {
-  width: 24%;
   text-align: center;
   text-decoration: unset;
   color: unset;
+  margin-left: 0.1%;
+  margin-right: 0.1%;
+  width: 24.925%;
 }
 
 .menu__list__item__img {
@@ -187,45 +205,49 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
-}
-.menu__list__item__img img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 13px;
 }
 
 .menu__list__item__new {
   position: absolute;
   background: #ee3c2d;
   color: #fff;
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  top: 30px;
-  left: 30px;
+  justify-content: center;
+  top: 15px;
+  left: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 .menu__list__item__price {
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 1.1px;
   color: #ee3c2d;
 }
+.menu__list__item__price span {
+  font-size: 15px;
+}
 
 .menu__list__item__title {
-  font-size: 19px;
+  font-size: 18px;
   letter-spacing: 1.6px;
-  margin-bottom: 13px;
+  margin-bottom: 2px;
   text-transform: uppercase;
 }
 
 .menu__list__item__descr {
   line-height: 20px;
   font-size: 15px;
-  margin-bottom: 13px;
 }
