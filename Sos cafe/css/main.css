@@ -236,7 +236,7 @@ a {
   letter-spacing: 1.1px;
   color: #ee3c2d;
 }
-.menu__list__item__price span {
+.menu__list__item__price .value {
   font-size: 15px;
 }
 
