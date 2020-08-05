@@ -134,13 +134,30 @@
 //     });
 // })();
 $(document).ready(function(){
-    if($('.snacks__list__item').length > 4) {
-        $('.snacks__list').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1
-        });
-    }
+    // var snacks = $('.snacks__list__item');
+    
+    // const lists = (list) => {
+    //     for(var i = 0; list.length > 0; i++) {
+    //         if(list.length > 4) {
+    //             console.log(list.parent('.slick-list'));
+
+    //             $('.snacks__list').on('init', function(event, slick){
+                    
+    //             });
+
+
+    //             $('.snacks__list').slick({
+    //                 infinite: true,
+    //                 slidesToShow: 4,
+    //                 slidesToScroll: 1
+    //             });
+    //         }
+    //     }
+    // }
+
+    // lists(snacks);
+
+    
     if($('.snacks__list__item').length == 1) {
         $('.snacks__list__item').css('margin', '0')
     }

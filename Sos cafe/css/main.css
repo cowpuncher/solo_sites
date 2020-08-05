@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -5,6 +9,11 @@ body {
   line-height: 1.425;
   min-height: 100%;
   position: relative;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +35,16 @@ h1.menu_header_title {
   font-family: "Roboto", sans-serif;
   text-align: center;
   margin-bottom: 35px;
+}
+
+.section_desc {
+  text-align: center;
+  font-size: 14px;
+  width: 300px;
+  margin: 15px auto 22px;
+}
+.section_desc span {
+  color: #ff002a;
 }
 
 a {
@@ -96,7 +115,7 @@ a {
 
 .menu_sub-menu .red_logo {
   position: absolute;
-  right: 12%;
+  right: 7%;
   top: 14px;
 }
 
@@ -178,11 +197,19 @@ a {
 }
 
 .section_menu {
-  background: #feffe8;
-  padding: 50px 0;
+  padding: 50px 0 20px;
 }
 
-.snacks__list {
+.bg_yellow {
+  background: #feffe8;
+}
+
+.bg_beige {
+  background: #fff5ea;
+}
+
+.snacks__list,
+.suace_slider {
   margin: 0 auto;
   position: relative;
   width: 1270px;
@@ -235,19 +262,63 @@ a {
   font-size: 30px;
   letter-spacing: 1.1px;
   color: #ee3c2d;
+  position: relative;
 }
-.menu__list__item__price .value {
+.menu__list__item__price span {
   font-size: 15px;
+}
+.menu__list__item__price .vegan {
+  position: absolute;
+  left: 85px;
 }
 
 .menu__list__item__title {
   font-size: 18px;
-  letter-spacing: 1.6px;
   margin-bottom: 2px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .menu__list__item__descr {
   line-height: 20px;
   font-size: 15px;
+}
+
+.section_sauce .menu-flexbox__item__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.section_sauce .menu-flexbox__item__title .menu__list__item__price {
+  margin-left: 15px;
+}
+
+.sauce_title {
+  margin-bottom: 17px;
+}
+
+.suace_slider {
+  justify-content: space-between;
+}
+
+.suace_slider_item {
+  width: 400px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  text-align: center;
+}
+.suace_slider_item .suace_slider_item_desc {
+  font-size: 15px;
+  font-weight: 100;
+  color: #808080;
+}
+.suace_slider_item .suace_slider_item_desc span {
+  color: #ee3c2d;
 }

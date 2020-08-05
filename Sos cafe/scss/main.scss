@@ -2,12 +2,20 @@
 @import "mixin";
 
 //ANCHOR Specification
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     @include indentZeroing;
     line-height: 1.425;
     min-height: 100%;
     position: relative;
+}
+p {
+    @include indentZeroing;
 }
 // ANCHOR TITLES
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +36,16 @@ h1.menu_header_title {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-bottom: 35px;
+}
+
+.section_desc {
+    text-align: center;
+    font-size: 14px;
+    width: 300px;
+    margin: 15px auto 22px;
+    span {
+        color: #ff002a;
+    }
 }
 // ANCHOR LINKS
 a {
@@ -96,7 +114,7 @@ a {
 }
 .menu_sub-menu .red_logo {
     position: absolute;
-    right: 12%;
+    right: 7%;
     top: 14px;
 }
 // // ANCHOR MENU POPUP
@@ -303,13 +321,19 @@ a {
          transform: translateY(-9px) translateX(0) rotate(-45deg);
     background: $bgColorWhite;
 }
-// ANCHOR SECTIOn
+// ANCHOR SECTION
 .section_menu {
+    padding: 50px 0 20px;
+}
+.bg_yellow {
     background: $colorYell;
-    padding: 50px 0;
+}
+.bg_beige {
+    background: #fff5ea;
 }
 // ANCHOR MENU LIST 
-.snacks__list {
+.snacks__list,
+.suace_slider {
     margin: 0 auto;
     position: relative;
     width: 1270px;
@@ -342,17 +366,82 @@ a {
     font-size: 30px;
     letter-spacing: 1.1px;
     color: $colorRed;
-    .value {
+    position: relative;
+    span {
         font-size: 15px;;
+    }
+    .vegan {
+        position: absolute;
+        left: 85px;
     }
 }
 .menu__list__item__title {
     font-size: 18px;
-    letter-spacing: 1.6px;
     margin-bottom: 2px;
     text-transform: uppercase;
+    text-align: center;
 }
 .menu__list__item__descr {
     line-height: 20px;
     font-size: 15px;
+}
+// ANCHOR SAUCE SECTION
+.section_sauce .menu-flexbox__item__title {
+    @include dFlex ($justify: center);
+    .menu__list__item__price {
+        margin-left: 15px;
+    }
+    margin: 0;
+}
+.sauce_title {
+    margin-bottom: 17px;
+}
+.suace_slider {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.suace_slider_item {
+    width: 400px;
+    height: 110px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #ffffff;
+    -webkit-box-shadow: $cardShadow;
+       -moz-box-shadow: $cardShadow;
+            box-shadow: $cardShadow;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+            text-align: center;
+            .suace_slider_item_desc {
+                font-size: 15px;
+                font-weight: 100;
+                color: #808080;
+                span {
+                    color: $colorRed;
+                }
+            }
 }
