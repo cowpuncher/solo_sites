@@ -164,7 +164,7 @@ $(document).ready(function(){
     //     }
     // });
 
-    const activeSlider = (slider, item, index) => {
+    const activeSlider = (slider, item, index, mobIndex) => {
         $(slider).each(function(_, e){
             if ($(e).find(item).length > index) {
                 
