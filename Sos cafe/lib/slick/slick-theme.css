@@ -77,6 +77,14 @@
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0,.05);
 
 }
+.slick-prev:hover svg .pathColor,
+.slick-prev:focus svg .pathColor,
+.slick-next:hover svg .pathColor,
+.slick-next:focus svg .pathColor
+{
+    fill: #ee3c2d;
+
+}
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
