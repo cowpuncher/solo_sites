@@ -1,9 +1,5 @@
 @charset 'UTF-8';
 /* Slider */
-.slick-loading .slick-list
-{
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
-}
 
 /* Icons */
 @font-face
@@ -23,7 +19,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 35%;
 
     display: block;
 
@@ -41,8 +37,32 @@
     color: transparent;
     border: none;
     outline: none;
-    background: #000000;
     z-index: 1;
+    width: 72px;
+    height: 72px;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+}
+.section_sauce .slick-prev,
+.section_sauce .slick-next {
+    top: 50%;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -51,7 +71,11 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0,.05);
+       -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0,.05);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0,.05);
+
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -82,38 +106,38 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -80px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -80px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -80px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -80px;
 }
 .slick-next:before
 {
-    content: '→';
+    content: '';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '';
 }
 
 /* Dots */
