@@ -36,12 +36,15 @@ h1.menu_header_title {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-bottom: 35px;
+    span {
+        color: $colorRed;
+    }
 }
 
 .section_desc {
     text-align: center;
     font-size: 14px;
-    width: 300px;
+    line-height: 1.7em;
     margin: 15px auto 22px;
     span {
         color: #ff002a;
@@ -51,6 +54,55 @@ h1.menu_header_title {
 a {
     background-color: transparent;
     text-decoration: none;
+}
+// ANCHOR BACKGROUND
+.bg_yellow {
+    background: #feffe8;
+}
+.bg_beige {
+    background: #fff5ea;
+}
+.bg_silver {
+    background: #f5f5f5;
+}
+.bg_card_white {
+    background: #ffffff;
+    color: #000000;
+    .suace_slider_item_desc {
+        color: #808080;
+    }
+}
+.bg_card_green {
+    background: #36c416;
+    color: #ffffff;
+    .suace_slider_item_desc,
+    .menu__list__item__title {
+        color: #ffffff;
+    }
+}
+.bg_card_red {
+    background: #ff3c34;
+    .suace_slider_item_desc,
+    .menu__list__item__title {
+        color: #ffffff;
+    }
+}
+.bg_card_orange {
+    background: #ffd146;
+    -webkit-justify-content: space-around!important;
+        -ms-flex-pack: distribute!important;
+            justify-content: space-around!important;
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+    -webkit-flex-direction: row!important;
+       -moz-box-orient: horizontal!important;
+       -moz-box-direction: normal!important;
+        -ms-flex-direction: row!important;
+            flex-direction: row!important;
+    .suace_slider_item_desc,
+    .menu__list__item__title {
+        color: #000000;
+    }
 }
 // ANCHOR MAIN MENU
 .new_menu_header {
@@ -325,15 +377,10 @@ a {
 .section_menu {
     padding: 50px 0 20px;
 }
-.bg_yellow {
-    background: $colorYell;
-}
-.bg_beige {
-    background: #fff5ea;
-}
 // ANCHOR MENU LIST 
 .snacks__list,
-.suace_slider {
+.suace_slider,
+.block_table_list {
     margin: 0 auto;
     position: relative;
     width: 1270px;
@@ -372,7 +419,7 @@ a {
     }
     .vegan {
         position: absolute;
-        left: 85px;
+        left: -30px;
     }
 }
 .menu__list__item__title {
@@ -384,6 +431,12 @@ a {
 .menu__list__item__descr {
     line-height: 20px;
     font-size: 15px;
+    font-weight: 100;
+    color: #808080;
+    padding: 0 5px;
+    span {
+        color: $colorRed;
+    }
 }
 // ANCHOR SAUCE SECTION
 .section_sauce .menu-flexbox__item__title {
@@ -394,23 +447,22 @@ a {
     margin: 0;
 }
 .sauce_title {
-    margin-bottom: 17px;
+    margin-bottom: 13px;
 }
 .suace_slider {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
 }
 .suace_slider_item {
-    width: 400px;
+    width: 400px!important;
     height: 110px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -418,30 +470,61 @@ a {
        -moz-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    @include dFlex($justify: center);
+    @include card(3, 1%);
+            .suace_slider_item_desc {
+                font-size: 15px;
+                font-weight: 100;
+                span {
+                    color: $colorRed;
+                }
+            }
+}
+// ANCHOR BLOCK TABLE
+.block_table {
     -webkit-box-align: center;
     -webkit-align-items: center;
        -moz-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #ffffff;
-    -webkit-box-shadow: $cardShadow;
-       -moz-box-shadow: $cardShadow;
-            box-shadow: $cardShadow;
-    -webkit-border-radius: 20px;
-       -moz-border-radius: 20px;
-            border-radius: 20px;
-            text-align: center;
-            .suace_slider_item_desc {
-                font-size: 15px;
-                font-weight: 100;
-                color: #808080;
-                span {
-                    color: $colorRed;
-                }
-            }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    padding: 28px 0;
+    .menu__list__item__title {
+        margin-bottom: 12px;
+    }
+}
+.line_top {
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 48%;
+        background: #ffd146;
+        height: 1px;
+        width: 70px;
+    }
+}
+.block_table_list {
+    @include dFlex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    .block_table_list_item {
+        width: 47%;
+        @include dFlex($justify: space-between);
+        border-bottom: 1px solid #ffd146;
+        text-transform: uppercase;
+        padding-top: 7px;
+        .menu__list__item__price {
+            font-size: 16px;
+        }
+    }
 }

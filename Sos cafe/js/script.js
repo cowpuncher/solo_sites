@@ -134,31 +134,54 @@
 //     });
 // })();
 $(document).ready(function(){
-    // var snacks = $('.snacks__list__item');
-    
-    // const lists = (list) => {
-    //     for(var i = 0; list.length > 0; i++) {
-    //         if(list.length > 4) {
-    //             console.log(list.parent('.slick-list'));
 
-    //             $('.snacks__list').on('init', function(event, slick){
-                    
-    //             });
-
-
-    //             $('.snacks__list').slick({
-    //                 infinite: true,
-    //                 slidesToShow: 4,
-    //                 slidesToScroll: 1
-    //             });
-    //         }
+    // $('.snacks__list').each(function(_, e){
+    //     if ($(e).find('.snacks__list__item').length > 4) {
+            
+    //         $(e).find('.snacks__list__item').css('margin', '0');
+    //         $(e).slick({
+    //             infinite: true,
+    //             slidesToShow: 4,
+    //             slidesToScroll: 1
+    //         });
+    //     } else if($(e).find('.snacks__list__item').length < 2) {
+    //         $(e).find('.snacks__list__item').css('margin', '0');
     //     }
-    // }
+    // });
 
-    // lists(snacks);
+    // $('.suace_slider').each(function(_, e){
+    //     let items = $('.suace_slider_item');
+        
+    //     if ($(e).find(items).length > 3) {
+    //         $(e).find(items).css('margin', '0');
+    //         $(e).slick({
+    //             infinite: true,
+    //             slidesToShow: 3,
+    //             slidesToScroll: 1
+    //         });
+    //     } else if($(e).find(items).length < 2) {
+    //         $(e).find(items).css('margin', '0');
+    //     }
+    // });
 
-    
-    if($('.snacks__list__item').length == 1) {
-        $('.snacks__list__item').css('margin', '0')
+    const activeSlider = (slider, item, index) => {
+        $(slider).each(function(_, e){
+            if ($(e).find(item).length > index) {
+                
+                $(e).find(item).css('margin', '0');
+                $(e).slick({
+                    infinite: true,
+                    slidesToShow: index,
+                    slidesToScroll: 1
+                });
+            } else if($(e).find(item).length < 2) {
+                $(e).find(item).css('margin', '0');
+            }
+        });
     }
+
+    activeSlider($('.snacks__list'),$('.snacks__list__item'),4);
+    activeSlider($('.suace_slider'),$('.suace_slider_item'),3);
+    
+
   });
