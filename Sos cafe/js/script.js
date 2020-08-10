@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+
     const activeSlider = (slider, item, index) => {
         $(slider).each(function(_, e){
             if ($(e).find(item).length > index) {
@@ -62,7 +63,6 @@ $(document).ready(function(){
         activeSlider($('.suace_slider'),$('.suace_slider_item'),2);
     } 
     if(document.body.clientWidth  < 580) {
-        console.log('test');
         $('.mini_list').each(function(_, e){
             if ($(e).find('.mini_list_item').length > 1) {
                 $(e).find('.mini_list_item').css('margin', '0');
@@ -70,7 +70,7 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     infinite: false,
                     arrows: false,
-                    centerPadding: '60px',
+                    centerPadding: '50px',
                     prevArrow: '<div class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fcd0c4"/></svg></div>',
                     nextArrow: '<div class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#fcd0c4"/></svg></div>',
                     slidesToScroll: 1
