@@ -171,104 +171,6 @@ a {
     right: 7%;
     top: 14px;
 }
-// // ANCHOR MENU POPUP
-// .overlay {
-//     position: fixed;
-//     background: #FFFFFF;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 0%;
-//     opacity: 0;
-//     visibility: hidden;
-//     -webkit-transition: opacity .35s, visibility .35s, height .35s;
-//     -o-transition: opacity .35s, visibility .35s, height .35s;
-//     -moz-transition: opacity .35s, visibility .35s, height .35s;
-//     transition: opacity .35s, visibility .35s, height .35s;
-//     overflow: hidden;
-//     z-index: 99;
-// }
-// .overlay.open {
-//     opacity: 1;
-//     overflow: auto;
-//     visibility: visible;
-//     height: 100%;
-// }
-// .overlay nav {
-//     position: relative;
-//     height: 70%;
-//     top: 30px;
-//     font-size: 36px;
-//     text-transform: uppercase;
-//     font-weight: 400;
-//     text-align: center;
-//     font-family: 'Circe-Bold', sans-serif;
-//     width: 214px;
-//     margin: 0 auto;
-// }
-// .overlay ul {
-//     list-style: none;
-//     padding: 0;
-//     margin: 0 auto;
-//     display: inline-block;
-//     position: relative;
-//     height: 100%;
-// }
-// .overlay ul li {
-//     display: block;
-//     min-height: 74px;
-//     line-height: 74px;
-//     position: relative;
-//     opacity: 1;
-// }
-// .overlay.open li {
-//     -webkit-animation: fadeInRight .5s ease forwards;
-//     -moz-animation: fadeInRight .5s ease forwards;
-//       -o-animation: fadeInRight .5s ease forwards;
-//          animation: fadeInRight .5s ease forwards;
-//     -webkit-animation-delay: .35s;
-//     -moz-animation-delay: .35s;
-//       -o-animation-delay: .35s;
-//          animation-delay: .35s;
-// }
-// .overlay ul li.nav_menu_logo {
-//     height: 140px;
-//     margin-bottom: 54px;
-// }
-// .overlay ul li a {
-//     display: block;
-//     position: relative;
-//     color: #292828;
-//     text-decoration: none;
-//     overflow: hidden;
-// }
-// .overlay-menu .phone_block {
-//     display: none;
-//     color: #000;
-//     font-size: 23px;
-//     padding-left: 36px;
-//     white-space: nowrap;
-//     margin-bottom: 10px;
-//     font-weight: 600;
-//     line-height: 1.5;
-//     background-position-x: 40px;
-//     margin-top: 50px;
-// }
-// .overlay-menu .whatsapp_block {
-//     display: none;
-//     color: #000;
-//     font-size: 23px;
-//     padding-left: 36px;
-//     white-space: nowrap;
-//     margin-bottom: 10px;
-//     font-weight: 600;
-//     line-height: 36px;
-//     background-image: url(/upload/whatsapp.svg);
-//     -webkit-background-size: contain;
-//        -moz-background-size: contain;
-//             background-size: contain;
-//     background-repeat: no-repeat;
-// }
 .container-fixed {
     max-width: 1680px;
     width: 100%;
@@ -562,10 +464,6 @@ a {
     .suace_slider_item {
         width: 320px !important;
     }
-    // .menu__list__item__img {
-    //     width: 240px;
-    //     height: 240px;
-    // }
     .menu__list__item__img {
         width: 95%;
         height: 100%;
@@ -575,20 +473,12 @@ a {
     .snacks__list, .suace_slider, .block_table_list {
         width: 900px;
     }
-    //  .menu__list__item__img {
-    //      width: 200px;
-    //      height: 200px;
-    //  }
     .slick-prev {
         left: -45px;
     }
     .slick-next {
         right: -45px;
     }
-    
-    // .snacks__list__item {
-    //     @include card(4, 2.1%)  
-    // }
     .suace_slider_item {
         width: 290px !important;
     }
@@ -608,10 +498,6 @@ a {
     .suace_slider_item {
         width: 8% !important;
     }
-    // .menu__list__item__img {
-    //     width: 150px;
-    //     height: 150px;
-    // }
     .menu_sub-menu .container {
         padding: 0 0%;
         position: relative;
