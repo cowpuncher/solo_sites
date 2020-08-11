@@ -285,11 +285,15 @@ a {
   height: 300px;
   margin-bottom: 13px;
 }
+.menu__list__item__img:hover {
+  box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.16);
+}
 
 .menu__list__item__img {
   padding-bottom: 100%;
   position: relative;
   background: #fff;
+  outline: none;
 }
 
 .menu__list__item__img img {
@@ -302,6 +306,11 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.menu__list__item__img img.img_transparent {
+  width: 90%;
+  height: 90%;
 }
 
 .slick-slide .vegan img {
@@ -411,7 +420,7 @@ a {
   margin-bottom: 1px;
 }
 .block_table .menu__list__item__title {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .line_top::before {
@@ -438,10 +447,15 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid #ffd146;
   text-transform: uppercase;
-  padding: 7px 0 3px;
+  padding: 7px 0 6px;
+  line-height: 1em;
 }
 .block_table_list .block_table_list_item .menu__list__item__price {
   font-size: 16px;
+}
+
+#burgers {
+  padding: 50px 0 25px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -586,13 +600,15 @@ a {
   .snacks__list .menu__list__item__price,
 .snacks__list .menu__list__item__title,
 .snacks__list .menu__list__item__descr {
-    display: none;
+    opacity: 0;
+    transition: ease-in 0.5s all;
   }
 
   .slick-active .menu__list__item__price,
 .slick-active .menu__list__item__title,
 .slick-active .menu__list__item__descr {
-    display: block;
+    opacity: 1;
+    transition: ease-in 1s all;
   }
 
   .menu__list__item__img {
@@ -639,6 +655,10 @@ a {
     left: 41px;
   }
 
+  .button_container {
+    top: -12px;
+  }
+
   .section_sauce .menu-flexbox__item__title {
     flex-direction: column;
   }
@@ -674,5 +694,10 @@ a {
     height: 60px;
     width: 60px;
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .snacks__list .slick-list {
+    padding: 0 70px !important;
   }
 }

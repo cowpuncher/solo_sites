@@ -8,8 +8,8 @@ $(document).ready(function(){
                 $(e).slick({
                     infinite: true,
                     slidesToShow: index,
-                    prevArrow: '<div class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fcd0c4"/></svg></div>',
-                    nextArrow: '<div class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#fcd0c4"/></svg></div>',
+                    prevArrow: '<div class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fcd0c4"/></svg></div>',
+                    nextArrow: '<div class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#fcd0c4"/></svg></div>',
                     slidesToScroll: 1,
                     responsive: [
                         {
@@ -71,8 +71,8 @@ $(document).ready(function(){
                     infinite: false,
                     arrows: false,
                     centerPadding: '50px',
-                    prevArrow: '<div class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fcd0c4"/></svg></div>',
-                    nextArrow: '<div class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#fcd0c4"/></svg></div>',
+                    prevArrow: '<div class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fcd0c4"/></svg></div>',
+                    nextArrow: '<div class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#fcd0c4"/></svg></div>',
                     slidesToScroll: 1
                 });
             }
@@ -82,6 +82,11 @@ $(document).ready(function(){
     activeSlider($('.snacks__list'),$('.snacks__list__item'),4);
     activeSlider($('.suace_slider'),$('.suace_slider_item'),3);
     
-    
+    // Active LightBox
+    $('.menu__list__item__img').lightzoom({
+        isOverlayClickClosing: true,
+        isEscClosing: true,
+        imgPadding: 50
+    });
 
   });

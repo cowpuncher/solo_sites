@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
     <title>Sos Cafe</title>
+    <!-- Add Slick Slider -->
     <link rel="stylesheet" href="./lib/slick/slick-theme.css">
     <link rel="stylesheet" href="./lib/slick/slick.css">
+    <!-- Add LightBox -->
+    <link rel="stylesheet" href="./lib/lightbox/style.css">
+    <!-- Main style css -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -62,15 +66,15 @@
             <h1 class="menu_header_title">меню</h1>
         </div>
         <!-- ANCHOR SECTION SNACKS -->
-        <div class="section_menu bg_yellow" id="zakuski">
+        <div class="section_menu bg_yellow" id="zakuski" data-href="#zakuski" >
             <div class="menu-flexbox__item__title">
                 закуски
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/snack.png" class="menu__list__item__img">
+                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         <span class="vegan"><img src="./img/vegan.png" alt=""></span>
                         200 
@@ -82,14 +86,14 @@
                     <div class="menu__list__item__descr">
                         кукурузные чипсы с сальсой и сырным соусом          
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/snack.png" class="menu__list__item__img">
+                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
                         <span class="menu__list__item__new">
                             Новинка 
                         </span>
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         200 <span>₽</span>           
                     </div>
@@ -99,11 +103,11 @@
                     <div class="menu__list__item__descr">
                         кукурузные чипсы          
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/snack.png" class="menu__list__item__img">
+                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         200 <span>₽</span>          
                     </div>
@@ -113,11 +117,11 @@
                     <div class="menu__list__item__descr">
                         кукурузные чипсы с сальсой и сырным соусом          
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/snack.png" class="menu__list__item__img">
+                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         200 <span>₽</span>           
                     </div>
@@ -127,11 +131,11 @@
                     <div class="menu__list__item__descr">
                         кукурузные чипсы с сальсой и сырным соусом          
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/snack.png" class="menu__list__item__img">
+                        <img src="./img/snack.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         200 <span>₽</span>           
                     </div>
@@ -141,7 +145,7 @@
                     <div class="menu__list__item__descr">
                         кукурузные чипсы с сальсой и сырным соусом          
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION TOASTS -->
@@ -150,42 +154,42 @@
                 sospecial тосты
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
+                <div class="snacks__list__item" >
+                    <a href="./img/toast.jpg" class="menu__list__item__img">
                         <img src="./img/toast.jpg" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         200 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Остро-пряными колбасками       
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/toast.jpg" class="menu__list__item__img">
                         <img src="./img/toast.jpg" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
                         <span class="menu__list__item__new">
                             Новинка 
                         </span>
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         200 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Остро-пряными колбасками          
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/toast.jpg" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/toast.jpg" class="menu__list__item__img">
+                        <img src="./img/toast.jpg" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS" >
+                    </a>
                     <div class="menu__list__item__price">
                         200 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Остро-пряными колбасками с джемом  
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION SAUCES -->
@@ -348,10 +352,10 @@
                 хот доги <span>sos</span>pecial
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/hot-dog.png" class="menu__list__item__img">
+                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -361,11 +365,11 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями БУФФАЛО и релишем из соленых огурцов         
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/hot-dog.png"  class="menu__list__item__img">
+                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -376,11 +380,11 @@
                         C рубленными куриными крыльями БУФФАЛО
 
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/hot-dog.png"  class="menu__list__item__img">
+                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -390,11 +394,11 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями БУФФАЛО    
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/hot-dog.png"  class="menu__list__item__img">
+                        <img src="./img/hot-dog.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -404,7 +408,7 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями      
                     </div>
-                </a>
+                </div>
                 
             </div>
         </div>
@@ -414,21 +418,21 @@
                 sospecial plates
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png"  class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         buffalo wing dog      
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png"  class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -439,11 +443,11 @@
                         C рубленными куриными крыльями 
 
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png"  class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -453,11 +457,11 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями БУФФАЛО    
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png"  class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -467,18 +471,18 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями      
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png"  class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         buffalo wing dog      
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION SOUPS -->
@@ -487,34 +491,34 @@
                 супы с бейглом и моцареллой
             </div>
             <div class="snacks__list mini_list">
-                <a class="snacks__list__item mini_list_item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/soup.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
+                <div class="snacks__list__item mini_list_item" >
+                    <a href="./img/soup.png"  class="menu__list__item__img">
+                        <img src="./img/soup.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
                         <span class="menu__list__item__new">
                             Новинка 
                         </span>
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         buffalo wing dog      
                     </div>
-                </a>
-                <a class="snacks__list__item mini_list_item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/soup.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
+                </div>
+                <div class="snacks__list__item mini_list_item" >
+                    <a href="./img/soup.png"  class="menu__list__item__img">
+                        <img src="./img/soup.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
                         <span class="menu__list__item__new">
                             Новинка 
                         </span>
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         buffalo wing dog      
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION WAFFLES -->
@@ -523,31 +527,31 @@
                 sospecial waffle
             </div>
             <div class="snacks__list mini_list">
-                <a class="snacks__list__item mini_list_item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
+                <div class="snacks__list__item mini_list_item" >
+                    <a href="./img/waffle.png"  class="menu__list__item__img">
                         <img src="./img/waffle.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Остро прямые колбаски    
                     </div>
-                </a>
-                <a class="snacks__list__item mini_list_item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
+                </div>
+                <div class="snacks__list__item mini_list_item" >
+                    <a href="./img/waffle.png"  class="menu__list__item__img">
                         <img src="./img/waffles.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
                         <span class="menu__list__item__new">
                             Новинка 
                         </span>
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         buffalo wing dog      
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION BURGER -->
@@ -556,10 +560,10 @@
                 бургеры <span>sos</span>pecial
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/burger.png"  class="menu__list__item__img">
+                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -570,14 +574,14 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/burger.png" class="menu__list__item__img">
+                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
                         <span class="menu__list__item__new">
                             Новинка 
                         </span>
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -588,14 +592,14 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/burger.png" class="menu__list__item__img">
+                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
                         <span class="menu__list__item__new">
                             Новинка 
                         </span>
-                    </div>
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -605,11 +609,11 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями 
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/burger.png" class="menu__list__item__img">
+                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -619,11 +623,11 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями 
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <da href="./img/burger.png"iv class="menu__list__item__img">
+                        <img src="./img/burger.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </da>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -633,7 +637,7 @@
                     <div class="menu__list__item__descr">
                         C рубленными куриными крыльями 
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR BLOCK TABLE-->
@@ -709,10 +713,10 @@
                 Pepsi/7UP <span>330 мл</span>, вода с газом/без <span>500 мл</span>
             </p>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -723,11 +727,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -738,11 +742,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -753,11 +757,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -768,11 +772,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -783,7 +787,7 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION DRINKS -->
@@ -792,21 +796,21 @@
                 Безалкогольные напитки
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -817,11 +821,11 @@
                         C рубленными куриными крыльями <span>BUFFALO</span>
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -832,11 +836,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -847,11 +851,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -862,7 +866,7 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION COFFEE -->
@@ -871,21 +875,21 @@
                 Кофе
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -896,11 +900,11 @@
                         C рубленными куриными крыльями <span>BUFFALO</span>
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -911,11 +915,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -926,11 +930,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -941,7 +945,7 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION SHAKES -->
@@ -950,39 +954,39 @@
                 Шейки
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION COCKTAILS -->
@@ -991,21 +995,21 @@
                 Коктейли в лампах
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1016,11 +1020,11 @@
                         C рубленными куриными крыльями <span>BUFFALO</span>
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1031,11 +1035,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1046,11 +1050,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1061,7 +1065,7 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR BLOCK TABLE-->
@@ -1131,21 +1135,21 @@
                 Коктейли на пиве
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1156,11 +1160,11 @@
                         C рубленными куриными крыльями <span>BUFFALO</span>
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1171,11 +1175,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1186,11 +1190,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1201,7 +1205,7 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!-- ANCHOR SECTION VINES -->
@@ -1210,21 +1214,21 @@
                 Вино
             </div>
             <div class="snacks__list">
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
                     <div class="menu__list__item__title ">
                         Свежая вода     
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1235,11 +1239,11 @@
                         C рубленными куриными крыльями <span>BUFFALO</span>
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1250,11 +1254,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1265,11 +1269,11 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
-                <a class="snacks__list__item" href="/menu/4-zakuski/nachos-mexicanos/">
-                    <div class="menu__list__item__img">
-                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS">
-                    </div>
+                </div>
+                <div class="snacks__list__item" >
+                    <a href="./img/plates.png" class="menu__list__item__img">
+                        <img src="./img/plates.png" alt="NACHOS MEXICANOS" title="NACHOS MEXICANOS"  class="img_transparent">
+                    </a>
                     <div class="menu__list__item__price">
                         320 <span class="value">₽</span>           
                     </div>
@@ -1280,7 +1284,7 @@
                         C рубленными куриными крыльями BUFFALO
                         C рубленными куриными крыльями
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -1288,8 +1292,12 @@
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
+  <!-- Add script slick slider -->
   <script src="./lib/slick/slick.js"></script>
   <script src="./lib/slick/slick.min.js"></script>
+  <!-- Add LightBox -->
+    <script src="./lib/lightbox/lightzoom.js"></script>
+  <!-- Add main script -->
     <script src="./js/script.js"></script>
 </body>
 </html>
