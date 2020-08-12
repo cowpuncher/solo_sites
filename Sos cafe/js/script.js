@@ -59,13 +59,13 @@ $(document).ready(function(){
         });
     }
 
-
+    if(document.body.clientWidth  < 1005 && document.body.clientWidth  > 769) {
+        activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),4,false,true);
+    }
     if(document.body.clientWidth  < 768) {
         activeSlider($('.snacks__list'),$('.snacks__list__item'),2,false, true);
         activeSlider($('.suace_slider'),$('.suace_slider_item'),2,false,false);
         activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),2,true,true);
-
-        
     } 
     if(document.body.clientWidth  < 580) {
         $('.mini_list').each(function(_, e){
@@ -84,37 +84,15 @@ $(document).ready(function(){
         });
     }
 
-    activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),4,true);
-    activeSlider($('.snacks__list'),$('.snacks__list__item'),4,false);
-    activeSlider($('.suace_slider'),$('.suace_slider_item'),3,false);
+    activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),4,true, true);
+    activeSlider($('.snacks__list'),$('.snacks__list__item'),4,false,true);
+    activeSlider($('.suace_slider'),$('.suace_slider_item'),3,false,false);
 
-    if(document.body.clientWidth  > 993) {
-        // Active LightBox
-        jQuery('.menu__list__item__img').lightzoom({
-            isOverlayClickClosing: true,
-            isEscClosing: true,
-            imgPadding: 50
-        });
-    } else {
-        $( '.menu__list__item__img' ).on('click', function(event) {
-            $( '.menu__list__item__img' ).preventDefault();
-            console.log(event);
-        });
-    }
-    $( '.snacks__list__item' ).on('click','.menu__list__item__img', function(event) {
-
-        if(document.body.clientWidth  > 993) {
-            // Active LightBox
-            jQuery('.menu__list__item__img').lightzoom({
-                isOverlayClickClosing: true,
-                isEscClosing: true,
-                imgPadding: 50
-            });
-        } else {
-            event.preventDefault();
-        }
-
-       
+     // Active LightBox
+     jQuery('.menu__list__item__img').lightzoom({
+        isOverlayClickClosing: true,
+        isEscClosing: true
     });
+    
 
   });
