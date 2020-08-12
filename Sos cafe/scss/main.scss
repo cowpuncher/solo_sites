@@ -282,6 +282,7 @@ a {
     padding: 50px 0;
 }
 // ANCHOR MENU LIST 
+.slider_mob_arrow,
 .snacks__list,
 .suace_slider,
 .block_table_list {
@@ -476,7 +477,7 @@ position: static;
 }
 
 @media screen and (max-width: 1440px) {
-    .snacks__list, .suace_slider, .block_table_list {
+    .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
         width: 1000px;
     }
     .suace_slider_item {
@@ -488,7 +489,7 @@ position: static;
     }
   }
 @media screen and (max-width: 1200px) {
-    .snacks__list, .suace_slider, .block_table_list {
+    .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
         width: 900px;
     }
     .slick-prev {
@@ -505,7 +506,7 @@ position: static;
     }
 }
 @media screen and (max-width: 1005px) { 
-    .snacks__list, .suace_slider{
+    .slider_mob_arrow, .snacks__list, .suace_slider{
         width: 100%;
     }
     .block_table_list {
@@ -528,7 +529,7 @@ position: static;
     }
 }
 @media screen and (max-width: 768px) { 
-    .snacks__list, .suace_slider, .block_table_list {
+    .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
         width: 100%;
     }
     .menu_sub-menu ul {
@@ -655,12 +656,13 @@ position: static;
 
 }
 @media screen and (max-width: 640px) { 
+    .slider_mob_arrow .slick-list, 
     .snacks__list .slick-list {
         padding: 0 180px!important;
     }
 }
 @media screen and (max-width: 576px) { 
-    .snacks__list, .suace_slider, .block_table_list {
+     .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
         width: 100%;
     }
     .new_menu_header h1 {
@@ -708,6 +710,7 @@ position: static;
         width: 40%;
     }
     
+    .slider_mob_arrow .slick-list, 
     .snacks__list .slick-list {
         padding: 0 100px!important;
     }
@@ -716,8 +719,37 @@ position: static;
         width: 60px;
         font-size: 10px;
     }
+    .slick-prev, .slick-next {
+        top: auto;
+        bottom: -30px;
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+        &:hover {
+            background: transparent;
+            -webkit-box-shadow: none;
+               -moz-box-shadow: none;
+                    box-shadow: none;
+        }
+    } 
+    .slick-next {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+           -moz-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+    .slick-prev {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+           -moz-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
 }
 @media screen and (max-width: 400px) { 
+    .slider_mob_arrow .slick-list, 
     .snacks__list .slick-list {
         padding: 0 70px!important;
     }

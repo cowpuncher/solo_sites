@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    const activeSlider = (slider, item, index, arrow) => {
+    const activeSlider = (slider, item, index, arrow, height) => {
         $(slider).each(function(_, e){
             if ($(e).find(item).length > index) {
                 $(e).find(item).css('margin', '0');
@@ -11,6 +11,7 @@ $(document).ready(function(){
                     prevArrow: '<div class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fcd0c4"/></svg></div>',
                     nextArrow: '<div class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 24 24" width="50"><path d="M0 0h24v24H0z" fill="none"/><path class="pathColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#fcd0c4"/></svg></div>',
                     slidesToScroll: 1,
+                    adaptiveHeight: height,
                     responsive: [
                         {
                             breakpoint: 1005,
@@ -60,9 +61,11 @@ $(document).ready(function(){
 
 
     if(document.body.clientWidth  < 768) {
-        activeSlider($('.snacks__list'),$('.snacks__list__item'),2,false);
-        activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),2,true);
-        activeSlider($('.suace_slider'),$('.suace_slider_item'),2,false);
+        activeSlider($('.snacks__list'),$('.snacks__list__item'),2,false, true);
+        activeSlider($('.suace_slider'),$('.suace_slider_item'),2,false,false);
+        activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),2,true,true);
+
+        
     } 
     if(document.body.clientWidth  < 580) {
         $('.mini_list').each(function(_, e){
@@ -81,8 +84,8 @@ $(document).ready(function(){
         });
     }
 
+    activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),4,true);
     activeSlider($('.snacks__list'),$('.snacks__list__item'),4,false);
-    activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),4,false);
     activeSlider($('.suace_slider'),$('.suace_slider_item'),3,false);
 
     

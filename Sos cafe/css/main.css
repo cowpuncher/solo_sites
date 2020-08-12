@@ -252,6 +252,7 @@ a {
   padding: 50px 0;
 }
 
+.slider_mob_arrow,
 .snacks__list,
 .suace_slider,
 .block_table_list {
@@ -459,7 +460,7 @@ a {
 }
 
 @media screen and (max-width: 1440px) {
-  .snacks__list, .suace_slider, .block_table_list {
+  .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
     width: 1000px;
   }
 
@@ -473,7 +474,7 @@ a {
   }
 }
 @media screen and (max-width: 1200px) {
-  .snacks__list, .suace_slider, .block_table_list {
+  .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
     width: 900px;
   }
 
@@ -494,7 +495,7 @@ a {
   }
 }
 @media screen and (max-width: 1005px) {
-  .snacks__list, .suace_slider {
+  .slider_mob_arrow, .snacks__list, .suace_slider {
     width: 100%;
   }
 
@@ -521,7 +522,7 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  .snacks__list, .suace_slider, .block_table_list {
+  .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
     width: 100%;
   }
 
@@ -650,12 +651,13 @@ a {
   }
 }
 @media screen and (max-width: 640px) {
-  .snacks__list .slick-list {
+  .slider_mob_arrow .slick-list,
+.snacks__list .slick-list {
     padding: 0 180px !important;
   }
 }
 @media screen and (max-width: 576px) {
-  .snacks__list, .suace_slider, .block_table_list {
+  .slider_mob_arrow, .snacks__list, .suace_slider, .block_table_list {
     width: 100%;
   }
 
@@ -702,7 +704,8 @@ a {
     width: 40%;
   }
 
-  .snacks__list .slick-list {
+  .slider_mob_arrow .slick-list,
+.snacks__list .slick-list {
     padding: 0 100px !important;
   }
 
@@ -711,9 +714,31 @@ a {
     width: 60px;
     font-size: 10px;
   }
+
+  .slick-prev, .slick-next {
+    top: auto;
+    bottom: -30px;
+  }
+  .slick-prev svg, .slick-next svg {
+    width: 35px;
+    height: 35px;
+  }
+  .slick-prev:hover, .slick-next:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .slick-next {
+    justify-content: flex-end;
+  }
+
+  .slick-prev {
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 400px) {
-  .snacks__list .slick-list {
+  .slider_mob_arrow .slick-list,
+.snacks__list .slick-list {
     padding: 0 70px !important;
   }
 }
