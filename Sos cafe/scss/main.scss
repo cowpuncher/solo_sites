@@ -605,21 +605,25 @@ position: static;
     }
     .snacks__list .menu__list__item__price,
     .snacks__list .menu__list__item__title,
-    .snacks__list .menu__list__item__descr {
+    .snacks__list .menu__list__item__descr,
+    .slider_mob_arrow .menu__list__item__price,
+    .slider_mob_arrow .menu__list__item__title,
+    .slider_mob_arrow .menu__list__item__descr {
         opacity: 0;
-        -webkit-transition: ease-in .5s all;
-        -o-transition: ease-in .5s all;
-        -moz-transition: ease-in .5s all;
-        transition: ease-in .5s all;
+        -webkit-transition: ease-in .3s all;
+        -o-transition: ease-in .3s all;
+        -moz-transition: ease-in .3s all;
+        transition: ease-in .3s all;
     }
     .slick-active .menu__list__item__price,
     .slick-active .menu__list__item__title,
-    .slick-active .menu__list__item__descr {
+    .slick-active .menu__list__item__descr
+     {
         opacity: 1;
-        -webkit-transition: ease-in 1s all;
-        -o-transition: ease-in 1s all;
-        -moz-transition: ease-in 1s all;
-        transition: ease-in 1s all;
+        -webkit-transition: ease-in .3s all;
+        -o-transition: ease-in .3s all;
+        -moz-transition: ease-in .3s all;
+        transition: ease-in .3s all;
     }
     .menu__list__item__img {
         width: 95%;
@@ -637,6 +641,16 @@ position: static;
         -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
                 box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+    }
+    .slick-prev, .slick-next {
+        top: auto;
+        bottom: -45px;
+    }
+    .slick-prev {
+        left: 0;
+    }
+    .slick-next {
+        right: 0;
     }
 
 }

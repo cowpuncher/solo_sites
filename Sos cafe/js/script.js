@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    const activeSlider = (slider, item, index) => {
+    const activeSlider = (slider, item, index, arrow) => {
         $(slider).each(function(_, e){
             if ($(e).find(item).length > index) {
                 $(e).find(item).css('margin', '0');
@@ -15,7 +15,7 @@ $(document).ready(function(){
                         {
                             breakpoint: 1005,
                             settings: {
-                                arrows: false,
+                                arrows: arrow,
                                 centerMode: true,
                                 centerPadding: '60px',
                                 infinite: true,
@@ -25,7 +25,7 @@ $(document).ready(function(){
                         {
                             breakpoint: 769,
                             settings: {
-                                arrows: false,
+                                arrows: arrow,
                                 centerPadding: '180px',
                                 slidesToShow: 1,
                                 centerMode: true
@@ -34,7 +34,7 @@ $(document).ready(function(){
                         {
                             breakpoint: 640,
                             settings: {
-                                arrows: false,
+                                arrows: arrow,
                                 centerPadding: '100px',
                                 slidesToShow: 1,
                                 centerMode: true
@@ -44,7 +44,7 @@ $(document).ready(function(){
                         {
                             breakpoint: 640,
                             settings: {
-                                arrows: false,
+                                arrows: arrow,
                                 centerPadding: '50px',
                                 slidesToShow: 1,
                                 centerMode: true
@@ -58,9 +58,11 @@ $(document).ready(function(){
         });
     }
 
+
     if(document.body.clientWidth  < 768) {
-        activeSlider($('.snacks__list'),$('.snacks__list__item'),2);
-        activeSlider($('.suace_slider'),$('.suace_slider_item'),2);
+        activeSlider($('.snacks__list'),$('.snacks__list__item'),2,false);
+        activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),2,true);
+        activeSlider($('.suace_slider'),$('.suace_slider_item'),2,false);
     } 
     if(document.body.clientWidth  < 580) {
         $('.mini_list').each(function(_, e){
@@ -79,8 +81,10 @@ $(document).ready(function(){
         });
     }
 
-    activeSlider($('.snacks__list'),$('.snacks__list__item'),4);
-    activeSlider($('.suace_slider'),$('.suace_slider_item'),3);
+    activeSlider($('.snacks__list'),$('.snacks__list__item'),4,false);
+    activeSlider($('.slider_mob_arrow'),$('.snacks__list__item'),4,false);
+    activeSlider($('.suace_slider'),$('.suace_slider_item'),3,false);
+
     
     // Active LightBox
     $('.menu__list__item__img').lightzoom({
